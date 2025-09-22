@@ -1,0 +1,95 @@
+
+body {
+    background: #f4f6fa url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator-container {
+    background: rgba(255,255,255,0.92);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px 24px 24px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.plant-animation {
+    width: 80px;
+    height: 120px;
+    margin: 0 auto 10px auto;
+    display: block;
+    object-fit: contain;
+    animation: plantGrow 1.5s ease-out;
+}
+
+@keyframes plantGrow {
+    0% { transform: scaleY(0.1) translateY(60px); opacity: 0; }
+    60% { opacity: 1; }
+    100% { transform: scaleY(1) translateY(0); opacity: 1; }
+}
+
+.display {
+    width: 100%;
+    background: #e9ecef;
+    border-radius: 8px;
+    padding: 18px 12px;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 18px;
+    color: #333;
+    min-height: 40px;
+}
+
+.grid-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.btn {
+    padding: 16px 0;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #388e3c;
+}
+
+#clear {
+    background: #f44336;
+}
+#clear:hover {
+    background: #b71c1c;
+}
+
+#calculate {
+    background: #2196f3;
+}
+#calculate:hover {
+    background: #1565c0;
+}
+
+.impact-result {
+    min-height: 32px;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+    margin-top: 8px;
+}

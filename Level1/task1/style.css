@@ -1,0 +1,114 @@
+/* Add/Update Resume link style */
+.resume-update-link {
+    font-size: 0.98em;
+    color: #2d3e50;
+    text-decoration: underline;
+    cursor: pointer;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f7f9fa;
+    color: #222;
+}
+header {
+    background: #2d3e50;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+.logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+header h1 {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    font-weight: 400;
+}
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background: #fff;
+    flex-wrap: wrap;
+}
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2rem;
+    border: 4px solid #2d3e50;
+}
+.bio {
+    max-width: 500px;
+}
+#skills, #projects, #resume, #contact {
+    background: #f0f4f8;
+    margin: 1.5rem auto;
+    padding: 1.5rem 1rem;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.05);
+}
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+#skills li {
+    background: #2d3e50;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+.project {
+    margin-bottom: 1.2rem;
+}
+.project h3 {
+    margin: 0 0 0.3rem 0;
+    color: #2d3e50;
+}
+#resume a {
+    color: #2d3e50;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#contact a {
+    color: #2d3e50;
+    text-decoration: none;
+}
+footer {
+    background: #2d3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+}
+footer a {
+    color: #ffd700;
+    text-decoration: underline;
+}
+@media (max-width: 700px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-photo {
+        margin: 0 0 1rem 0;
+    }
+    .bio {
+        max-width: 100%;
+    }
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

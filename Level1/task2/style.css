@@ -1,0 +1,128 @@
+/* Promotional/Eco-friendly images */
+.img-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+.promo-img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(34,139,34,0.13);
+    border: 2px solid #c8e6c9;
+    background: #fff;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4fff4;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(90deg, #228B22 60%, #4CAF50 100%);
+    color: #fff;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 12px rgba(34,139,34,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+header h2 {
+    margin: 10px 0 0 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+main {
+    margin-top: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+    background: #e8f5e9;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(76,175,80,0.07);
+    padding: 30px 0;
+}
+
+section h3 {
+    color: #228B22;
+    margin-top: 0;
+}
+
+.about p, .why ul, .cta p {
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+.why ul {
+    padding-left: 20px;
+}
+
+.why li {
+    margin-bottom: 10px;
+}
+
+.cta {
+    background: #c8e6c9;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background: #228B22;
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 18px;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #388e3c;
+}
+
+footer {
+    background: #228B22;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    header, section, footer {
+        border-radius: 0;
+    }
+    .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
